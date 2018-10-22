@@ -1,0 +1,72 @@
+<div id="header">
+    <div class="head clearfix">
+                <div class="city">
+            <a class="fc-city" href="http://cd.ganji.com" title="">成都</a> <a href="http://www.ganji.com/index.htm">[切换城市]</a>
+        </div>
+                <div class="head-m">
+            <ul class="column-list clearfix">
+                <li class="active"><a class="column" href="http://cd.ganji.com/zhaopin/" title="招聘" target="_blank">招聘</a><i class="column-arrow"></i></li>
+                <li><a class="column" href="http://cd.ganji.com/fang1/" title="" target="_blank">租房</a><i class="column-arrow"></i></li>
+                <li><a class="column" href="http://cd.ganji.com/fang5/" title="" target="_blank">二手房</a><i class="column-arrow"></i></li>
+                <li><a class="column" href="http://cd.ganji.com/che/" title="车辆" target="_blank">车辆</a><i class="column-arrow"></i></li>
+                <li><a class="column" href="http://cd.ganji.com/wu/" title="二手" target="_blank">二手</a><i class="column-arrow"></i></li>
+                <li data-widget="app/ms_v2/common/base_page.js#topNav" class="top-nav fl"> <a class="top-nav-btn clearfix js-btn" href="#" onclick="return false;">更多<em class="topnav-arrow"></em></a>
+                  <ul class="top-nav-list hide js-list"><li><em><a target="_blank" title="房产" href="http://cd.ganji.com/fang/" gjalog="/top_nav@link=fang/@atype=click">房产：</a></em><a target="_blank" title="租房" href="http://cd.ganji.com/fang1/" gjalog="/top_nav@link=http://cd.ganji.com/fang1/@atype=click">租房</a><a target="_blank" title="二手房" href="http://cd.ganji.com/fang5/" gjalog="/top_nav@link=http://cd.ganji.com/fang5/@atype=click">二手房</a><a target="_blank" title="商铺" href="http://cd.ganji.com/fang6/" gjalog="/top_nav@link=http://cd.ganji.com/fang6/@atype=click">商铺</a><a target="_blank" title="写字楼" href="http://cd.ganji.com/fang8/" gjalog="/top_nav@link=http://cd.ganji.com/fang8/@atype=click">写字楼</a></li><li><em><a target="_blank" title="招聘" href="http://cd.ganji.com/zhaopin/" gjalog="/top_nav@link=zhaopin/@atype=click">招聘：</a></em><a target="_blank" title="全职" href="http://cd.ganji.com/zhaopin/" gjalog="/top_nav@link=http://cd.ganji.com/zhaopin/@atype=click">全职</a><a target="_blank" title="兼职" href="http://cd.ganji.com/jianzhi/" gjalog="/top_nav@link=http://cd.ganji.com/jianzhi/@atype=click">兼职</a><a target="_blank" title="简历库" href="http://cd.ganji.com/findjob/resume_index.php" gjalog="/top_nav@link=http://cd.ganji.com/findjob/resume_index.php@atype=click">简历库</a></li><li><em><a target="_blank" title="车辆" href="http://cd.ganji.com/che/" gjalog="/top_nav@link=che/@atype=click">车辆：</a></em><a target="_blank" title="二手车" href="http://cd.ganji.com/ershouche/" gjalog="/top_nav@link=http://cd.ganji.com/ershouche/@atype=click">二手车</a><a target="_blank" title="摩托车" href="http://cd.ganji.com/motuoche/" gjalog="/top_nav@link=http://cd.ganji.com/motuoche/@atype=click">摩托车</a><a target="_blank" title="自行车" href="http://cd.ganji.com/zixingchemaimai/" gjalog="/top_nav@link=http://cd.ganji.com/zixingchemaimai/@atype=click">自行车</a><a target="_blank" title="拼车" href="http://cd.ganji.com/pincheshangxiaban/" gjalog="/top_nav@link=http://cd.ganji.com/pincheshangxiaban/@atype=click">拼车</a></li><li><em><a target="_blank" title="二手" href="http://cd.ganji.com/wu/" gjalog="/top_nav@link=wu/@atype=click">二手：</a></em><a target="_blank" title="手机" href="http://cd.ganji.com/shouji/" gjalog="/top_nav@link=http://cd.ganji.com/shouji/@atype=click">手机</a><a target="_blank" title="笔记本" href="http://cd.ganji.com/ershoubijibendiannao/" gjalog="/top_nav@link=http://cd.ganji.com/ershoubijibendiannao/@atype=click">笔记本</a><a target="_blank" title="家具" href="http://cd.ganji.com/jiaju/" gjalog="/top_nav@link=http://cd.ganji.com/jiaju/@atype=click">家具</a><a target="_blank" title="家电" href="http://cd.ganji.com/jiadian/" gjalog="/top_nav@link=http://cd.ganji.com/jiadian/@atype=click">家电</a></li><li><em><a target="_blank" title="宠物" href="http://cd.ganji.com/chongwu/" gjalog="/top_nav@link=chongwu/@atype=click">宠物：</a></em><a target="_blank" title="泰迪熊" href="http://cd.ganji.com/taidixiong/" gjalog="/top_nav@link=http://cd.ganji.com/taidixiong/@atype=click">泰迪熊</a><a target="_blank" title="金毛犬" href="http://cd.ganji.com/jinmao/" gjalog="/top_nav@link=http://cd.ganji.com/jinmao/@atype=click">金毛犬</a><a target="_blank" title="藏獒" href="http://cd.ganji.com/zangao/" gjalog="/top_nav@link=http://cd.ganji.com/zangao/@atype=click">藏獒</a><a target="_blank" title="哈士奇" href="http://cd.ganji.com/hashiqi/" gjalog="/top_nav@link=http://cd.ganji.com/hashiqi/@atype=click">哈士奇</a></li><li><em><a target="_blank" title="服务" href="http://cd.ganji.com/huangye/" gjalog="/top_nav@link=huangye/@atype=click">服务：</a></em><a target="_blank" title="搬家" href="http://cd.ganji.com/banjia/" gjalog="/top_nav@link=http://cd.ganji.com/banjia/@atype=click">搬家</a><a target="_blank" title="保姆" href="http://cd.ganji.com/baomu/" gjalog="/top_nav@link=http://cd.ganji.com/baomu/@atype=click">保姆</a><a target="_blank" title="租车" href="http://cd.ganji.com/zuchedaijia/" gjalog="/top_nav@link=http://cd.ganji.com/zuchedaijia/@atype=click">租车</a><a target="_blank" title="身边服务" href="http://xs.ganji.com/?ifid=shenghuo_from_headermenu" gjalog="/shenghuo/xs_head_index@atype=click">身边服务</a></li><li><em><a target="_blank" title="培训" href="http://cd.ganji.com/jiaoyupeixun/" gjalog="/top_nav@link=jiaoyupeixun/@atype=click">培训：</a></em><a target="_blank" title="职业培训" href="http://cd.ganji.com/zhiyepeixun/" gjalog="/top_nav@link=http://cd.ganji.com/zhiyepeixun/@atype=click">职业培训</a><a target="_blank" title="外语培训" href="http://cd.ganji.com/waiyupeixun/" gjalog="/top_nav@link=http://cd.ganji.com/waiyupeixun/@atype=click">外语培训</a><a target="_blank" title="学历培训" href="http://cd.ganji.com/jixujiaoyurenzheng/" gjalog="/top_nav@link=http://cd.ganji.com/jixujiaoyurenzheng/@atype=click">学历培训</a><a target="_blank" title="家教" href="http://cd.ganji.com/jiajiao/" gjalog="/top_nav@link=http://cd.ganji.com/jiajiao/@atype=click">家教</a></li><li><em><a href="http://cd.yiliao.ganji.com/" gjalog="/yiliao/index@category=top_nav@atype=click">医疗：</a></em><a target="_blank" title="查疾病" href="http://cd.yiliao.ganji.com/keshi/" gjalog="/yiliao/index@category=top_nav@link=keshi@atype=click">查疾病</a><a target="_blank" title="找医院" href="http://cd.yiliao.ganji.com/zhaoyiyuan/" gjalog="/yiliao/index@category=top_nav@link=search@atype=click">找医院</a><a target="_blank" title="健康专题" href="http://cd.yiliao.ganji.com/zhuanti/1/" gjalog="/yiliao/index@category=top_nav@link=zhuanti@atype=click">健康专题</a></li><li><em><a href="javascript: void(0)" onclick="return false;">其他：</a></em><a target="_blank" title="婚恋" href="http://love.ganji.com/" gjalog="/top_nav@link=love@atype=click">婚恋</a><a target="_blank" title="短租" href="http://www.mayi.com/fang10jumptodetail?url=http%3A%2F%2Fwww.mayi.com%2F&amp;ca_name=hz_bj_mayi_tab&amp;ca_source=ganji" gjalog="/top_nav@link=mayi@atype=click">短租</a><a target="_blank" title="票务" href="http://cd.ganji.com/piaowu/" gjalog="/top_nav@link=piaowu@atype=click">票务</a><a target="_blank" title="快速贷款" href="http://cd.ganji.com/jinrong/" gjalog="/top_nav@link=jinrong@atype=click">快速贷款</a></li></ul>
+                </li>
+            </ul>
+        </div>
+        <div class="head-r clearfix">
+            <div class="fl">
+                <div class="ganji-dingdong" data-widget="app/ms_v2/common/base_page.js#hoverWidget">
+                    <a target="_blank" href="http://mobile.ganji.com/?ifid=index_banner_up" gjalog="/mobile@name=weixin_qunzu@atype=click" class="dingdong-pop  ganji-phone-pop" data-role="activeBlock">
+                        <span class="arrow"></span>
+                        <div class="pic-area">
+                            <div class="ewm"></div>
+                            <p>扫一扫，上赶集群组</p>
+                        </div>
+                        <div class="txt-area">
+                            <p class="p1 f14">扫码使用<span class="f16">“赶集群组”</span></p>
+                            <p class="p2 f14 fb">交友&nbsp;&nbsp;寻爱&nbsp;&nbsp;找工作</p>
+                            <p class="p2 f14 fb">聊天&nbsp;&nbsp;聚会&nbsp;&nbsp;不寂寞</p>
+                        </div>
+                    </a>
+                    <a target="_blank" title="手机赶集" href="http://mobile.ganji.com/?ca_name=mobile_home_navb" class="column mobile-icon">手机赶集</a>
+                </div>
+            </div>
+            <div class="fl">
+                <div class="column ganji-dingdong" data-widget="app/ms_v2/common/base_page.js#hoverWidget">
+                    <a href="http://dingdong.ganji.com/" gjalog="/dingdong@name=weixin_dingdong@atype=click" class="dingdong-pop" target="_blank" data-role="activeBlock">
+                    <span class="arrow"></span>
+                    <div class="pic-area">
+                        <div class="ewm"></div>
+                        <p>扫一扫，手机上叮咚</p>
+                    </div>
+                    <div class="txt-area">
+                        <p class="p1 f14">微信绑定<span class="f16">“赶集叮咚”</span></p>
+                        <p class="p2 f14 fb">刷新置顶&nbsp;&nbsp;&nbsp;&nbsp;收发消息</p>
+                        <p class="p2 f14 fb">访客提醒&nbsp;&nbsp;&nbsp;&nbsp;轻松搞定</p>
+                    </div>
+                    </a>
+                    <a target="_blank" title="赶集叮咚" href="http://dingdong.ganji.com" gjalog="/dingdong@name=ding_dong_shouye@atype=click">赶集叮咚</a>
+                </div>
+            </div>
+            <div class="fl"><li data-widget="app/ms_v2/common/base_page.js#hoverWidget" class="top-nav fl"> <a class="top-nav-btn clearfix js-btn" href="http://cd.ganji.com/tuiguang/">我要推广<em class="topnav-arrow"></em></a>
+              <ul class="top-nav-list">
+                <li><a gjalog="/self_service/trace@source=self_promotion_post_detail_header@city_id=45@cat=zhaopin@atype=click" href="http://cd.ganji.com/tuiguang/zhaopin/bangbang/">招聘推广</a></li>
+                <li><a gjalog="/self_service/trace@source=self_promotion_post_detail_header@city_id=45@cat=zhaopin@atype=click" href="http://cd.ganji.com/tuiguang/fang/bangbang/">房产推广</a></li>
+                <li><a gjalog="/self_service/trace@source=self_promotion_post_detail_header@city_id=45@cat=zhaopin@atype=click" href="http://cd.ganji.com/tuiguang/fuwu/bangbang/">本地服务</a></li>
+                <li><a gjalog="/self_service/trace@source=self_promotion_post_detail_header@city_id=45@cat=zhaopin@atype=click" href="http://cd.ganji.com/tuiguang/che/bangbang/">车辆推广</a></li>
+                <li><a gjalog="/self_service/trace@source=self_promotion_post_detail_header@city_id=45@cat=zhaopin@atype=click" href="http://cd.ganji.com/tuiguang/wu/bangbang/">二手推广</a></li>
+                <li><a gjalog="/self_service/trace@source=self_promotion_post_detail_header@city_id=45@cat=zhaopin@atype=click" href="http://cd.ganji.com/tuiguang/chongwu/bangbang/">宠物推广</a></li>
+              </ul>
+            </li></div>
+
+            <div class="fl reg-login" data-widget="app/ms_v2/common/base_page.js#userinfoWidget">
+                <span class="reg-login-btn clearfix">
+                    <a class="reg js-signup-btn" href="http://www.ganji.com/user/register.php?next=http%3A%2F%2Fcd.ganji.com%2Fzpjisuanjiqita%2F1421360447x.htm" title="免费注册" target="_self" rel="nofollow">免费注册</a>
+                    <a class="login js-signin-btn" href="https://passport.ganji.com/login.php?next=http%3A%2F%2Fcd.ganji.com%2Fzpjisuanjiqita%2F1421360447x.htm" title="会员登录" target="_self" rel="nofollow">会员登录</a>
+                </span>
+            </div>
+            <div class="fl pl-15"><a href="/pub/pub.php?act=pub&amp;method=load&amp;cid=2&amp;mcid=1024&amp;domain=cd" target="_blank" rel="nofollow">免费发布信息</a></div>        </div>
+    </div>
+</div>

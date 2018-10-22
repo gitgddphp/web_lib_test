@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="js/jquery-1.9.1.min.js" language="javascript"></script>
+</head>
+
+<body>
+<form action="" method="post">
+
+<label for="user_name">用户名:</label><input type="text" value="" id="user_name" name="user_name" />
+<span id="user_name_prompt" for="user_name" class="prompt_default">默认提示信息!</span>
+
+</form>
+
+<script>
+$(document).ready(function(){
+  $("#user_name").blur(function(){
+	  	if($(this).val()==''){
+			$("#user_name_prompt").html("不为空错误提示信息!");
+			$("#user_name_prompt").attr("class","prompt_error");
+		}else{
+			$("#user_name_prompt").html("正确提示信息!");
+			$("#user_name_prompt").attr("class","prompt_right");
+		}
+	  })
+  $("#user_name").focus(function(){
+		$("#user_name_prompt").html("默认提示信息!");
+		$("#user_name_prompt").attr("class","prompt_default");
+	  })
+});
+</script>
+</body>
+</html>
