@@ -1,5 +1,0 @@
-端口信息发送 $fp=fsockopen($mail['server'], $mail['port'], $errno, $errstr, 30); 创建套接字
-$lastmessage = fgets($fp, 512);//提取套接字返回信息! 512字节数
-fputs($fp, base64_encode($mail['auth_username'])."\r\n");//套接字信息写入
-
-web常用环境:用户邮箱注册验证,密码找回验证
