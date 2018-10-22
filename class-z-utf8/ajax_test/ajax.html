@@ -1,0 +1,80 @@
+<html>
+	<head>
+    	<title>ajax测试</title>
+        <script>	
+function ajaxObj()
+ {
+ var xmlHttp,method,requestHeader,sendText,actionUrl;
+ this.init=function(Tmethod,TactionUrl,TrequestHeader,TsendText){
+	method=Tmethod;actionUrl=TactionUrl;requestHeader=TrequestHeader;
+	sendText=TsendText;
+ }
+ this.createAjax=function(){
+	 try
+		{
+	   // Firefox, Opera 8.0+, Safari
+		xmlHttp=new XMLHttpRequest();
+		}
+	 catch (e)
+		{
+
+	  // Internet Explorer
+	   try
+		  {
+		  xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+		  }
+	   catch (e)
+		  {
+
+		  try
+			 {
+			 xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+			 }
+		  catch (e)
+			 {
+			 alert("您的浏览器不支持AJAX！");
+			 return false;
+			 }
+		  }
+		}
+	}
+	
+	this.send=function(){
+		xmlHttp.onreadystatechange=function(){
+		  if(xmlHttp.readyState==4)
+			{
+			 alert(xmlHttp.responseText);
+			}
+		}
+		if(method=="get"){
+			actionUrl=actionUrl+'?'+sendText;
+		}
+		xmlHttp.open(method,actionUrl,true);
+		if(requestHeader!=null)
+			xmlHttp.setRequestHeader(requestHeader[0],requestHeader[1]);
+		xmlHttp.send(sendText);
+	}
+ }
+var c=new ajaxObj();
+c.createAjax();
+//c.init("post","ajax.php",Array("Content-Type","application/x-www-form-urlencoded"),"username=345&pass=128");
+//c.send();
+function getFormValues(formName){
+	var x,f_v,f_v_string='';
+	f_v=eval("Array("+document.myForm.elements['Fields'].value+")");
+	for(x=0;x<f_v.length;x++)
+		f_v_string+=f_v[x]+'='+document.myForm.elements[f_v[x]].value+'&';
+	alert(f_v_string.replace(/&$/, ""));
+}
+        </script>
+    </head>
+	<body>
+    	<form name="myForm">
+		用户: <input type="text" name="userName" value="cd1" />
+		时间: <input type="text" name="time" value="cd2" />
+		<input type="hidden" name="Fields" value="'userName','time'">
+		<input type="button" value="post提交" onclick="getFormValues('myForm')" />
+		<input type="button" value="get提交" onclick="" />
+		</form>
+    </body>
+</html>
