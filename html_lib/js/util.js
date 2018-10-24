@@ -1,3 +1,4 @@
+//js基础库 工具包
 //浏览器信息
 var Browser = new Object();
 
@@ -206,3 +207,140 @@ function cleanWhitespace(element)
      element.removeChild(node);
    }
 }
+
+//js 节点添加  可用于jsonp 进行跨域请求数据
+function addScript(src, func){
+    var script=document.createElement("script");
+    script.setAttribute("type","text/javascript");
+    script.setAttribute("id","json_js");
+    script.src=src;
+
+    if (script.readyState){//IE
+        script.onreadystatechange = function(){
+            if (script.readyState == 'loaded' || script.readyState == 'complete'){
+                script.onreadystatechange = null;
+                try{
+                //    console.log('rturn:',jsonp()); 
+                    if(typeof func == 'function'){
+                        var json = jsonp();
+                        json.status = 1;
+                        func(json);
+                    }  
+                }catch(e){
+                    func({status:0,error:'no!'});
+                }
+                
+            }
+        }
+    }else{
+        script.onload = function(){
+            try{
+            //    console.log('rturn:',jsonp()); 
+                if(typeof func == 'function'){
+                    var json = jsonp();
+                    json.status = 1;
+                    func(json);
+                }  
+            }catch(e){
+                if(typeof func == 'function'){
+                    func({status:0,error:'no!'});
+                }  
+            }
+            
+        }
+    }
+    document.head.appendChild(script);
+}
+//更新js 节点 路径
+function changeScript(id,src){
+    $('#'+id).remove();
+    var script=document.createElement("script");
+    script.setAttribute("type","text/javascript");
+    script.setAttribute("id","json_js");
+    script.setAttribute("src",src);
+    
+    if (script.readyState){//IE
+        script.onreadystatechange = function(){
+            if (script.readyState == 'loaded' || script.readyState == 'complete'){
+                script.onreadystatechange = null;
+                try{
+                    console.log(jsonp());   
+                }catch(e){
+                    console.log('no!');
+                }
+                
+            }
+        }
+    }else{
+        script.onload = function(){
+            try{
+                console.log(jsonp());   
+            }catch(e){
+                console.log('no!');
+            }
+        }
+    }
+    document.head.appendChild(script);
+}
+
+//记录用户的浏览记录 依赖jquery.cookie.js
+function GHistory(){
+    var second = 0;
+    this.init= function(cfg){
+        window.setInterval(function () {
+            second ++;
+        }, 1000);
+        if(cfg.submitUrl){
+            this.submitUrl = cfg.submitUrl;
+        }
+        var tjArr = localStorage.getItem("jsArr") ? localStorage.getItem("jsArr") : '[{}]';
+        $.cookie('tjRefer', getReferrer() ,{expires:1,path:'/'});
+    }
+    this.getUrlList = function(){
+        var tjArr = localStorage.getItem("jsArr") ? localStorage.getItem("jsArr") : '[{}]';    
+        return tjArr;
+    }
+    window.onbeforeunload = function() {
+        if($.cookie('tjRefer') == ''){
+            var tjT = eval('(' + localStorage.getItem("jsArr") + ')');
+            if(tjT){
+                tjT[tjT.length-1].time += second;
+                var jsArr= JSON.stringify(tjT);
+                localStorage.setItem("jsArr", jsArr);
+            }
+        } else {
+            var tjArr = localStorage.getItem("jsArr") ? localStorage.getItem("jsArr") : '[{}]';
+            var dataArr = {
+                'url' : location.href,
+                'time' : second,
+                'refer' : getReferrer(),
+                'timeIn' : Date.parse(new Date()),
+                'timeOut' : Date.parse(new Date()) + (second * 1000)
+            };
+            tjArr = eval('(' + tjArr + ')');
+            tjArr.push(dataArr);
+            tjArr= JSON.stringify(tjArr);
+            localStorage.setItem("jsArr", tjArr);
+        }
+    };
+    function getReferrer() {
+        var referrer = '';
+        try {
+            referrer = window.top.document.referrer;
+        } catch(e) {
+            if(window.parent) {
+                try {
+                    referrer = window.parent.document.referrer;
+                } catch(e2) {
+                    referrer = '';
+                }
+            }
+        }
+        if(referrer === '') {
+            referrer = document.referrer;
+        }
+        return referrer;
+    }
+}
+//var his = new GHistory();
+//his.init({submitUrl:'http://my.kf1.com/operator/updateurllist'});
